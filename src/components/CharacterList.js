@@ -5,12 +5,10 @@ import axios from "axios";
 export default function CharacterList(props) {
   // TODO: Add useState to track data from useEffect
   const [character, setCharacter] = useState([]);
-  console.log(character);
 
   // const id = props.match.params.id;
   const characterUrl =  `https://rickandmortyapi.com/api/character/`;
   useEffect(() => {
-
 
     // TODO: Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
@@ -19,7 +17,6 @@ export default function CharacterList(props) {
     .then(response => {
         // debugger
         let characterFromAPI = response.data.results;
-        console.log(characterFromAPI);
         setCharacter(characterFromAPI);
          
     })

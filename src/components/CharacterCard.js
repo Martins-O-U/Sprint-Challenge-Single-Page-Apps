@@ -5,7 +5,6 @@ import {
 } from 'reactstrap';
 
 export default function CharacterCard({data}) {
-  console.log(data.name)
   return (
     <div className='card-body'>
       <Card>
@@ -15,7 +14,6 @@ export default function CharacterCard({data}) {
             <CardTitle><strong>{data.name}</strong></CardTitle>
             <CardSubtitle>({data.gender})</CardSubtitle>
           </div>
-          {/* <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText> */}
         </CardBody>
       </Card>
     </div>
