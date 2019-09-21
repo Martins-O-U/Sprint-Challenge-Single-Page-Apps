@@ -85,6 +85,21 @@ a:hover{
   margin-left: 10px;
 }
 
+.welcome{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.welcome-msg{
+  margin-right: 20%;
+  text-align: center;
+}
+
+.welcome-msg2{
+  display: none;
+}
+
 @media (max-width: 1067px) {
   .link {
     margin-left: 70px;  }
@@ -103,10 +118,22 @@ a:hover{
   }
   a{
     margin: 0px 7px 0px 7px;
-
   }
 
   .search-form{
     display: block;
-    text-align: center;   }
+    text-align: center;   
+  }
+  .welcome{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0px;
+  }
+  .welcome-msg{
+    display: none;
+  }
+  .welcome-msg2{
+    display: block;
+    text-align: center;
+  }
 }
