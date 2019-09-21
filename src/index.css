@@ -58,3 +58,55 @@ header h1 {
   border: 1.2px dashed #A9A9A9;
   box-shadow: 3px 5px 8px #888888;
 }
+
+.search-form{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 60px 20px 0px;
+}
+
+a{
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  margin: 0px 5px 0px 5px;
+  border: 2px solid lightgray;
+  padding: 2.5px 5px;
+  background: #FFFFE0;
+  border-radius: 7px;
+
+}
+
+a:hover{
+  background: 	#98FB98;
+}
+
+.link{
+  margin-left: 10px;
+}
+
+@media (max-width: 1067px) {
+  .link {
+    margin-left: 70px;  }
+}
+
+@media (max-width: 865px) {
+  .link {
+    margin-left: 45px;  }
+}
+
+@media (max-width: 711px) {
+  .link {
+    text-align: center; 
+    margin-bottom: 20px;
+    margin-right:45px; 
+  }
+  a{
+    margin: 0px 7px 0px 7px;
+
+  }
+
+  .search-form{
+    display: block;
+    text-align: center;   }
+}

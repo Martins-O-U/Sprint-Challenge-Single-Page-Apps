@@ -7,7 +7,7 @@ export default function SearchForm(props) {
       <form onSubmit={props.onSubmit}>
         <input
           type="text"
-          placeholder="Search"
+          placeholder="Search for a charater"
           onChange={props.onChange}
           value={props.query}
         />
