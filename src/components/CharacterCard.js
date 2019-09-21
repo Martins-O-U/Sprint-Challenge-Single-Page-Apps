@@ -6,9 +6,9 @@ import {
 
 export default function CharacterCard({data}) {
   return (
-    <div className='card-body'>
+    <div className='card'>
       <Card>
-        <CardImg top width="100%" src={data.image} alt="Card image cap" />
+        <CardImg className="cardImg" top width="100%" src={data.image} alt="Card image cap" />
         <CardBody>
           <div className="card-content">
             <CardTitle><strong>{data.name}</strong></CardTitle>

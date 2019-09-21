@@ -40,9 +40,21 @@ header h1 {
 
 .card-content{
   display: flex;
+  text-shadow: 0px 1.5px 1.5px #A9A9A9;
+  margin-top: 5px;
 }
 
-.card-body{
+.card{
   margin-top: 10px;
   margin-bottom: 10px;
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.cardImg {
+  border: 1.2px dashed #A9A9A9;
+  box-shadow: 3px 5px 8px #888888;
 }
