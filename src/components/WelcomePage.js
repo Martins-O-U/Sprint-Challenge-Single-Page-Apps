@@ -3,9 +3,9 @@ import React from "react";
 export default function WelcomePage() {
   return (
     <section className="welcome-page">
-      <header className="welcome">
+      <header className="welcome card">
         <img
-          className="main-img"
+          className="main-img cardImg"
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
