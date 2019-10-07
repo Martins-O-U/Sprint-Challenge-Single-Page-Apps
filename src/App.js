@@ -32,16 +32,18 @@ export default function App() {
   return (
     <main>
       <Header />
-      <SearchForm onChange={onChange} onSubmit={onSubmit} query={searchQuery} />
+      
+      <Route
+        path="/characters"
+        render={props => (
+          <SearchForm onChange={onChange} onSubmit={onSubmit} query={searchQuery} />
+        )}
+      />
       <Route path="/" exact component={WelcomePage} />
       <Route
         path="/characters"
         render={props => (
-          <CharacterList
-            {...props}
-            characterData={characterData}
-            setCharacterData={setCharacterData}
-          />
+          <CharacterList {...props} characterData={characterData}setCharacterData={setCharacterData} />
         )}
       />
     </main>

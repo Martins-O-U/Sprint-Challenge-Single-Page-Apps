@@ -27,12 +27,6 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
-.main-img {
-  display: block;
-  border-radius: 100%;
-  margin: 0 auto;
-} */
 
 header h1 {
   text-align: center;
@@ -40,9 +34,101 @@ header h1 {
 
 .card-content{
   display: flex;
+  text-shadow: 0px 1.5px 1.5px #A9A9A9;
+  margin-top: 5px;
 }
 
-.card-body{
+.card{
   margin-top: 10px;
   margin-bottom: 10px;
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.cardImg {
+  border: 1.2px dashed #A9A9A9;
+  box-shadow: 3px 5px 8px #888888;
+}
+
+.search-form{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 60px 20px 0px;
+}
+
+a{
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  margin: 0px 5px 0px 5px;
+  border: 2px solid lightgray;
+  padding: 2.5px 5px;
+  background: #FFFFE0;
+  border-radius: 7px;
+
+}
+
+a:hover{
+  background: 	#98FB98;
+}
+
+.link{
+  margin-left: 10px;
+}
+
+.welcome{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.welcome-msg{
+  margin-right: 19%;
+  margin-top: 8%;
+  text-align: center;
+}
+
+.welcome-msg2{
+  display: none;
+}
+
+@media (max-width: 1067px) {
+  .link {
+    margin-left: 70px;  }
+}
+
+@media (max-width: 865px) {
+  .link {
+    margin-left: 45px;  }
+}
+
+@media (max-width: 711px) {
+  .link {
+    text-align: center; 
+    margin-bottom: 20px;
+    margin-right:45px; 
+  }
+  a{
+    margin: 0px 7px 0px 7px;
+  }
+
+  .search-form{
+    display: block;
+    text-align: center;   
+  }
+  .welcome{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0px;
+  }
+  .welcome-msg{
+    display: none;
+  }
+  .welcome-msg2{
+    display: block;
+    text-align: center;
+  }
 }
